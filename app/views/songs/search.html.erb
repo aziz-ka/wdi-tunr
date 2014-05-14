@@ -1,0 +1,8 @@
+<% @songs.each do |song| %>
+  <div class="container twevle columns">
+    <div>
+      <h2><%= song[:title] %></h2>
+    </div>
+    <img src="<%= song[:artwork_url] %>" alt="">
+  </div>
+<% end %>
