@@ -32,6 +32,11 @@
 .container form {
   display: inline-block;
 }
+.container header form {
+  /*border: 1px solid red;*/
+  position: relative;
+  bottom: 3px;
+}
 .container form input {
   display: inline;
 }
