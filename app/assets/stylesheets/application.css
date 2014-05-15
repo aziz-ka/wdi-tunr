@@ -10,12 +10,96 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require base
  *= require layout
  *= require skeleton
  *= require_tree .
  *= require_self
  */
-.container .twelve .columns {
+
+.container {
+  text-align: center;
+}
+.container h1, h2, h3, p, a {
+  color: #eee;
+}
+.container header {
+  width: 100%;
+  background-color: #46c159;
+  padding-top: 30px;
+}
+.container form {
   display: inline-block;
 }
+.container form input {
+  display: inline;
+}
+.container form input[type="text"] {
+  height: 18px;
+}
+.container h2 {
+  margin: 50px 200px 50px 0;
+  display: inline-block;
+}
+.all {
+  background-color: #9edeab;
+  /*margin: 0 0 20px;*/
+  /*padding: 0;*/
+}
+.artist {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  /*float: left;*/
+  width: 410px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 50px 20px;
+  background-color: rgba(90,200,110,.8);
+  padding: 50px 10px 10px;
+}
+.artist form {
+  display: block;
+  float: right;
+  position: relative;
+  bottom: 137px;
+}
+.artist img, .artist h3, .artist audio {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 36px;
+  font-size: 35px;
+}
+.artist audio {
+  margin-right: 0;
+}
+.search {
+  text-align: center;
+  background-color: #6bce7a;
+  padding: 25px 0;
+}
+.search * {
+  color: #333;
+}
+.search div {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  border: 1px solid #2a7736;
+  border-radius: 10px;
+  width: 200px;
+  /*height: 250px;*/
+  background-color: rgba(222,255,222,.3);
+}
+.search div img {
+  display: block;
+  margin: 0 auto 10px;
+}
+.search form {
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.search div form button {
+  width: 102px;
+}
+
